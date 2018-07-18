@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace P1T3
 {
 	class Program
 	{
@@ -13,14 +13,14 @@ namespace ConsoleApp1
 			Console.WriteLine("Please enter the frequency of the drips (in seconds):");
 			int intFreq = Convert.ToInt32(Console.ReadLine());
 
-			double dblHr = 3600/intFreq*0.00025;
+			double dblHr = 3600 / intFreq * 0.00025;
 			double dblDay = 86400 / intFreq * 0.00025;
 			double dblWk = 604800 / intFreq * 0.00025;
 
 			Console.WriteLine("You are wasting;");
-			Console.WriteLine(dblHr.ToString() + " liters per hour");
-			Console.WriteLine(dblDay.ToString() + " liters per day");
-			Console.WriteLine(dblWk.ToString() + " liters per week");
+			Console.WriteLine(Convert.ToInt32(dblHr).ToString() + " glasses of water per hour");
+			Console.WriteLine(Convert.ToInt32(dblDay).ToString() + " glasses of water per day");
+			Console.WriteLine(Convert.ToInt32(dblWk).ToString() + " glasses of water per week");
 
 			Console.ReadLine();
 		}
