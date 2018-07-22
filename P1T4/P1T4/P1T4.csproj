@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A570329F-81BF-4A69-BCCE-379A539C06A9}</ProjectGuid>
+    <ProjectGuid>{1EE4146D-6773-4774-B0B8-C8587B7C76BC}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>WholeGlasses</RootNamespace>
-    <AssemblyName>WholeGlasses</AssemblyName>
+    <RootNamespace>P1T4</RootNamespace>
+    <AssemblyName>P1T4</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
