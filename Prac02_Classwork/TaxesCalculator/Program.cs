@@ -21,9 +21,19 @@ namespace TaxesCalculator
 
         static string Calc(int age, int sal)
         {
-            int red = 0;
-            Array lsRed1 = new Array[13, 250, 620, 600, 600, 700, 500, 400, 2950];
-            if ((age >= 65) && (age <= 75)) { Array lsRed = lsRed1[sal]; }
+            //int red = 0;
+            int lsRed[];
+            int lsRed1[10] = { 0, 13, 250, 620, 600, 600, 700, 500, 400, 2950 };
+            int lsRed2[10] = { 0, 13, 250, 620, 800, 900, 900, 700, 600, 3000 };
+
+            if (age < 65) { int lsRed = 0; }
+            else if ((age >= 65) && (age <= 75)) { lsRed = lsRed1; }
+            else { lsRed = lsRed2;  }
+
+            if ((sal > 0) && (sal < 5000)) { sal = 0; }
+            else if ((sal >= 5000) && (sal < 6500)) { sal = 1; }
+
+
             string strTax = "";
             return strTax;
         }
