@@ -80,10 +80,5 @@ namespace AdvancedTaxCalculator
             }
             return lsTax;
         }
-
-        static void InpErr(string strErr = "valid digits")
-        {
-            Console.WriteLine("Input Error. Please enter only {0}.", strErr);
-        }
     }
 }
